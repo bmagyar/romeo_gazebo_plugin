@@ -6,31 +6,19 @@ Package developed against ROS Indigo and default gazebo (gazebo 2.2.3)
 Dependencies
 ------------
 
-The package requires romeo_description package
+The package requires romeo_description and romeo_dcm_control package
 
 .. code-block:: bash
 
     sudo apt-get install ros-indigo-romeo-description
+    git clone https://github.com/ros-aldebaran/romeo_robot/tree/master/romeo_dcm/romeo_dcm_control
 
 Other plugins to fetch and compile:
-
-roboticgroups_gazebo_plugins
 
 .. code-block:: bash
     
     git clone git@github.com:roboticsgroup/roboticsgroup_gazebo_plugins.git
-
-pal_msgs
-
-.. code-block:: bash
-    
     git clone git@github.com:pal-robotics/pal_msgs.git
-
-
-pal_gazebo plugins
-
-.. code-block:: bash
-    
     git clone git@github.com:pal-robotics/pal_gazebo_plugins.git
     catkin_make
 
@@ -60,7 +48,7 @@ Wait until eveything is successfully loaded:
     [INFO] [WallTime: 1413899465.061789] [0.000000] Controller Spawner: Loaded controllers: /romeo_dcm/Head_controller, /romeo_dcm/RightArm_controller, /romeo_dcm/LeftArm_controller, /romeo_dcm/LeftLeg_controller, /romeo_dcm/RightLeg_controller, /romeo_dcm/RightHand_controller, /romeo_dcm/LeftHand_controller, /romeo_dcm/joint_state_controller
 
 
-Click the play button.
+Click the Play button.
 
 Your Romeo should be standing in front of the ball at the center of the field.
 
@@ -100,8 +88,4 @@ To control your simulated robot using MoveIt, run:
     roslaunch romeo_moveit_config moveit_planner.launch
 
 
-Then you can use moveit as usual : quick tutorial here https://github.com/ros-aldebaran/romeo_moveit_config/blob/master/README.rst
-
-Using Choregraphe behaviours:
-
-To be done
+Then you can control the robot with MoveIt!, check the tutorial quick tutorial here https://github.com/ros-aldebaran/romeo_moveit_config/blob/master/README.rst

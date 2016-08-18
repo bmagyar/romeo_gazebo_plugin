@@ -11,7 +11,7 @@ The package requires romeo_description and romeo_dcm_control package
 .. code-block:: bash
 
     sudo apt-get install ros-indigo-romeo-description
-    git clone https://github.com/ros-aldebaran/romeo_robot/tree/master/romeo_dcm/romeo_dcm_control
+    git clone https://github.com/ros-aldebaran/romeo_robot.git
 
 Other plugins to fetch and compile:
 
